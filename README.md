@@ -1,3 +1,2 @@
 # ContactsDirectory
-Contacts Directory application.
-Created by [@BaddourAbdallah](http://twitter.com/baddourabdallah) using [Ionic Framework](http://ionicframework.com/)
+Contacts Directory Application Created By [@BaddourAbdallah](http://twitter.com/baddourabdallah) Using [Ionic Framework](http://ionicframework.com/)
