@@ -36,3 +36,6 @@ $ ionic setup sass
 $ ionic platform add android
 $ ionic run android
 ```
+
+#License
+See the [LICENSE](https://github.com/AbdallahBaddour/ContactsDirectory/blob/master/LICENSE.md) file for license rights and limitations (MIT).
