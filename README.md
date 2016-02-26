@@ -1,2 +1,3 @@
 # ContactsDirectory
-Contacts Directory app with Ionic Framework.
+Contacts Directory application.
+Created by [@BaddourAbdallah](http://twitter.com/baddourabdallah) using [Ionic Framework](http://ionicframework.com/)
