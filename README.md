@@ -17,7 +17,7 @@ $ ionic start [appname] blank
 ```bash
 $ ionic plugin add https://github.com/apache/cordova-plugin-whitelist.git
 ```
-Add these 2 line in <b>config.xml</b> below:
+Add these 2 lines in <b>config.xml</b> below:
 ```bash
 <access origin="*"/>
 ```
