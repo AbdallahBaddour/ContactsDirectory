@@ -7,7 +7,7 @@ To setup the app:
 ```bash
 $ ionic start [appname] blank
 ```
-2.Replace folders/files of my project in the blank project you just create.
+2.Replace folders/files of my project in the blank project you just create in the <b>www</b> folder.
 
 3.Install [ngCodova](http://ngcordova.com/docs/install/).
 
