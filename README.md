@@ -1,2 +1,2 @@
 # ContactsDirectory
-Contacts Directory app with Ionic Framework
+Contacts Directory app with Ionic Framework.
