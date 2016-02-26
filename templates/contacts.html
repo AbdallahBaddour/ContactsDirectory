@@ -1,0 +1,33 @@
+<ion-view title="Contacts">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon ion-android-person-add" ui-sref="new-contact">
+    </button>
+  </ion-nav-buttons>
+  <ion-content overflow-scroll="true" padding="true" class="has-header">
+    <label class="item item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input ng-model="searchText" type="search" placeholder="Search">
+    </label>
+    <ion-list>
+      <ion-item ng-repeat="contact in results | filter:searchText | orderBy:'name'" ng-href="#/contacts/{{contact.id}}">
+        <!--<ion-item class="item-icon-left" ng-repeat="contact in results">-->
+        <!--<i class="icon ion-android-contact">-->
+        <p>{{contact.name}}</p>
+        <b>{{contact.phone}}</b>
+        <!--</i>-->
+        <ion-option-button class="button-balanced"
+                           ng-click="CallTel(contact.phone)">
+          <!--<a class="button icon-left ion-ios7-telephone button-calm button-outline" ng-href="tel: {{contact.phone}}">call</a>-->
+          <i class="ion ion-android-call">&nbsp;Call
+          </i>
+        </ion-option-button>
+        <ion-option-button class="button-assertive"
+                           ng-click="DeleteContact(contact)">
+          <i class="ion ion-android-delete">&nbsp;Delete
+          </i>
+        </ion-option-button>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-view>

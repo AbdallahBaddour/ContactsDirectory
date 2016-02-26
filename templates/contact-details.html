@@ -1,0 +1,33 @@
+<ion-view title="Details">
+  <ion-content>
+
+    <div class="list card" ng-repeat="item in contactDetails">
+
+      <a class="item item-icon-left">
+        <i class="icon ion-android-contact"></i>
+        {{item.name}}
+      </a>
+
+      <a ng-click="CallTel(item.phone)" class="item item-icon-left">
+        <i class="icon ion-ios-telephone"></i>
+        {{item.phone}}
+      </a>
+
+      <a ng-if="item.phone2" ng-click="CallTel(item.phone2)" class="item item-icon-left">
+        <i class="icon ion-ios-telephone"></i>
+        {{item.phone2}}
+      </a>
+
+      <a ng-click="openemail(item.email)" ng-if="item.email" class="item item-icon-left">
+        <i class="icon ion-ios-email"></i>
+        {{item.email}}
+      </a>
+
+      <a ng-if="item.note" class="item item-body">
+        {{item.note}}
+      </a>
+
+    </div>
+
+  </ion-content>
+</ion-view>

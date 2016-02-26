@@ -1,0 +1,68 @@
+<ion-view title="Add">
+  <ion-nav-buttons side="right">
+    <button form="cForm" type="submit" class="button button-balanced">Save
+    </button>
+  </ion-nav-buttons>
+  <ion-content overflow-scroll="true" padding="true" class="has-header">
+
+    <form id="cForm" name="cForm" ng-submit="addcontact(cForm)" novalidate="novalidate">
+      <div class="list">
+        <label class="item item-input item-floating-label" ng-class="{'has-error':cForm.name.$invalid}">
+          <span class="input-label">Name</span>
+          <input name="name" ng-model="user.name" type="text" placeholder="Name" ng-required="true">
+        </label>
+        <div class="form-errors"
+             ng-messages="cForm.name.$error">
+          <div ng-messages-include="templates/form-errors.html">
+          </div>
+        </div>
+
+        <label class="item item-input item-floating-label" ng-class="{'has-error':cForm.phone.$invalid}">
+          <span class="input-label">Phone number</span>
+          <input name="phone" ng-model="user.phone" type="tel" placeholder="Phone number" minlength="8" maxlength="8"
+                 ng-pattern="/^[0-9]*$/" ng-required="true">
+        </label>
+        <div class="form-errors"
+             ng-messages="cForm.phone.$error">
+          <div ng-messages-include="templates/form-errors.html">
+          </div>
+        </div>
+
+        <label class="item item-input item-floating-label" ng-class="{'has-error':cForm.phone2.$invalid}">
+          <span class="input-label">Phone number 2</span>
+          <input name="phone2" ng-model="user.phone2" type="tel" placeholder="Phone number" minlength="8" maxlength="8"
+                 ng-pattern="/^[0-9]*$/">
+        </label>
+        <div class="form-errors"
+             ng-messages="cForm.phone2.$error">
+          <div ng-messages-include="templates/form-errors.html">
+          </div>
+        </div>
+
+        <label class="item item-input item-floating-label"
+               ng-class="{'has-error':cForm.email.$invalid}">
+          <span class="input-label">Email</span>
+          <input type="email"
+                 placeholder="Email"
+                 name="email"
+                 ng-model="user.email">
+        </label>
+
+        <div class="form-errors"
+             ng-messages="cForm.email.$error">
+          <div ng-messages-include="templates/form-errors.html">
+          </div>
+        </div>
+
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Note</span>
+          <textarea ng-model="user.note" name="note" placeholder="Note">
+          </textarea>
+        </label>
+
+      </div>
+    </form>
+
+  </ion-content>
+</ion-view>
+
