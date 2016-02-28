@@ -1,7 +1,7 @@
 # ContactsDirectory
 Simple Contacts Directory Application Created By [@BaddourAbdallah](http://twitter.com/baddourabdallah) Using [Ionic Framework](http://ionicframework.com/)
 
-To setup the app:
+<b>To setup the app:</b>
 
 1.First create a new blank ionic project:
 ```bash
